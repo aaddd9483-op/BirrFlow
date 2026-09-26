@@ -1,4 +1,4 @@
-const CACHE_NAME = 'birrflow-shell-v3';
+const CACHE_NAME = 'birrflow-shell-v4';
 const APP_SHELL = ['./', './index.html', './styles.css', './app.js', './pwa.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/icon.svg'];
 
 self.addEventListener('install', event => {
