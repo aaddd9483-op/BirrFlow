@@ -1,4 +1,4 @@
-const CACHE_NAME = 'birrflow-shell-v2';
+const CACHE_NAME = 'birrflow-shell-v3';
 const APP_SHELL = ['./', './index.html', './styles.css', './app.js', './pwa.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/icon.svg'];
 
 self.addEventListener('install', event => {
@@ -16,3 +16,4 @@ self.addEventListener('fetch', event => {
     return response;
   }).catch(() => event.request.mode === 'navigate' ? caches.match('./index.html') : Response.error())));
 });
+
